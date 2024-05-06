@@ -6,6 +6,55 @@
   <meta name="viewport" content="width=device-width">
     <tittle>HTML Elements</tittle>
   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+       html{
+            background-color:#ccc;
+          }
+
+       body {
+            font-family:Arial,sans-serif;
+            background-color:#fff;
+            max-width:960px;
+            width:90%;
+            margin:auto;
+            padding:3%; 
+          }
+        .page-header{ 
+          background-color: rgb(205, 238, 238);
+          text-align: center;
+          font-family: 'Inknut Antiqua',serif; 
+          text-shadow: 4px 4px 4px #aaa;
+        }
+            
+       /* start nav rules */
+           nav{
+           text-align:center; /* centers the nav */
+          } 
+       nav a{
+   color:#000; /* font color is black */
+          }
+
+       nav ul {
+   list-style:none; /* removes the bullets */
+          }
+
+           nav li{
+           display:inline-block; /* makes <li> horizontal, but able to declare margins */
+           margin:0 2%; /* margin left-right, gets smaller as necessary */
+          }
+
+       nav a:hover{
+   text-decoration: none; /* default underline goes away on hover */
+          }
+
+       /* end nav rules */
+
+        footer {
+            text-align:center;
+            clear:both;
+        }
+
+
        table.my-table {
             border-collapse: collapse;
           }
@@ -32,14 +81,24 @@
         }
         table.my-table tr:nth-child(odd) {
           background-color: #ffffff;
-
+        }
+       
   </style>
 </head>
 <body> 
-    <h1>HTML Element</h1>
-    <p>Clever content goes here</p>
-    <p>Clever content goes here</p>
-    <p>Clever content goes here</p>
+    <h1 class="page-header">Stylin' with CSS</h1>
+    <nav>
+      <ul>
+        <li><a href="#">LINK 1</a></li>
+        <li><a href="#">LINK 2</a></li>
+        <li><a href="#">LINK 3</a></li>
+        <li><a href="#">LINK 4</a></li>
+        <li><a href="#">LINK 5</a></li>
+      </ul>
+    </nav>
+    <p>This page demonstrates how to create a look and feel on our pages using CSS</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed non sagittis leo.Morbi dictum consectetur mi.Nunc scelerisque,nisi a maximus aliquam,augue nulla pharetrea elit, sit amet facilisis velit erat vel mi.Suspendisse dictum augue sodales lorem mattis fermentum. Donec gravida ac ipsum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.sed non sagitis leo. Morbi pretium bibendum lacus ac scelersque. Morbie dictum consecteture mi. Nunc scelerisque,nisi a maximus aliquam, auge nulla pharetra elit, sit amet facilisis velit erat vel mi. Suspendisse dictum auge sodales lorem mattis fermentum. Donec gravida ac ipsum.</p>
     <div>
       <ul> 
         <li>Cookies</li> 
@@ -58,7 +117,7 @@
     <p>Here is how we use the <em>em</em> tag.</p>
     <p>Here is how we use the <i>italize</i> tag.</p>
     <p>Here is how we use the <b>bold</b> tag.</p>
-    <div>Here is inside the div.<span Style="background -color:yellow;"> Here we are inside a span. </span></div>
+    <div>Here is inside the div.<span Style="background-color:yellow;"> Here we are inside a span. </span></div>
     <table class="my-table">
       <tr>
         <th>First Name</th>
@@ -80,6 +139,7 @@
         <td> Judy@example.com</td>
       </tr>  
     </table>
+    <footer>copyright &copy; 2024</footer>
     
 </body>
 
